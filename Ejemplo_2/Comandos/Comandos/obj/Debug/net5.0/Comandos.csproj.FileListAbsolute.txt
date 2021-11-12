@@ -1,0 +1,16 @@
+C:\Users\Alejandro Moreno\Documents\GitHub\Servicios_Telematicos\Ejemplo_2\Comandos\Comandos\bin\Debug\net5.0\Comandos.exe
+C:\Users\Alejandro Moreno\Documents\GitHub\Servicios_Telematicos\Ejemplo_2\Comandos\Comandos\bin\Debug\net5.0\Comandos.deps.json
+C:\Users\Alejandro Moreno\Documents\GitHub\Servicios_Telematicos\Ejemplo_2\Comandos\Comandos\bin\Debug\net5.0\Comandos.runtimeconfig.json
+C:\Users\Alejandro Moreno\Documents\GitHub\Servicios_Telematicos\Ejemplo_2\Comandos\Comandos\bin\Debug\net5.0\Comandos.runtimeconfig.dev.json
+C:\Users\Alejandro Moreno\Documents\GitHub\Servicios_Telematicos\Ejemplo_2\Comandos\Comandos\bin\Debug\net5.0\Comandos.dll
+C:\Users\Alejandro Moreno\Documents\GitHub\Servicios_Telematicos\Ejemplo_2\Comandos\Comandos\bin\Debug\net5.0\ref\Comandos.dll
+C:\Users\Alejandro Moreno\Documents\GitHub\Servicios_Telematicos\Ejemplo_2\Comandos\Comandos\bin\Debug\net5.0\Comandos.pdb
+C:\Users\Alejandro Moreno\Documents\GitHub\Servicios_Telematicos\Ejemplo_2\Comandos\Comandos\obj\Debug\net5.0\Comandos.csproj.AssemblyReference.cache
+C:\Users\Alejandro Moreno\Documents\GitHub\Servicios_Telematicos\Ejemplo_2\Comandos\Comandos\obj\Debug\net5.0\Comandos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alejandro Moreno\Documents\GitHub\Servicios_Telematicos\Ejemplo_2\Comandos\Comandos\obj\Debug\net5.0\Comandos.AssemblyInfoInputs.cache
+C:\Users\Alejandro Moreno\Documents\GitHub\Servicios_Telematicos\Ejemplo_2\Comandos\Comandos\obj\Debug\net5.0\Comandos.AssemblyInfo.cs
+C:\Users\Alejandro Moreno\Documents\GitHub\Servicios_Telematicos\Ejemplo_2\Comandos\Comandos\obj\Debug\net5.0\Comandos.csproj.CoreCompileInputs.cache
+C:\Users\Alejandro Moreno\Documents\GitHub\Servicios_Telematicos\Ejemplo_2\Comandos\Comandos\obj\Debug\net5.0\Comandos.dll
+C:\Users\Alejandro Moreno\Documents\GitHub\Servicios_Telematicos\Ejemplo_2\Comandos\Comandos\obj\Debug\net5.0\ref\Comandos.dll
+C:\Users\Alejandro Moreno\Documents\GitHub\Servicios_Telematicos\Ejemplo_2\Comandos\Comandos\obj\Debug\net5.0\Comandos.pdb
+C:\Users\Alejandro Moreno\Documents\GitHub\Servicios_Telematicos\Ejemplo_2\Comandos\Comandos\obj\Debug\net5.0\Comandos.genruntimeconfig.cache
