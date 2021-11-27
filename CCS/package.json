@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1"
+  },
+  "name": "ccs",
+  "version": "1.0.0",
+  "main": "servidor.js",
+  "scrips":{
+    "start": "node servidor.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
