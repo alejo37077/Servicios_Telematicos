@@ -1,0 +1,15 @@
+.btn{
+    padding:20px;
+        background:#502121;
+        color:white;
+        font:bold 10px/10px verdana;
+        width:100px;
+        cursor:pointer;
+        cursor:hand;
+        text-align:center;
+}
+
+.arriba1{
+    position: absolute;
+    left: 50%;
+}

@@ -1,3 +1,4 @@
+const puerto=process.env.PORT;
 const express = require("express");
 const app=express();
 const puerto=5000;

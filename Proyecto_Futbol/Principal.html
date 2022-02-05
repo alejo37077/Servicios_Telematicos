@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Gamedev Canvas Workshop - lesson 3: bounce off the walls</title>
+    <style>* { padding: 0; margin: 0; } canvas { background: #eee; display: block; margin: 0 auto; }</style>
+</head>
+<body>
+
+<ul>
+<li><a href="CapFondo.html" target="juego"> Fondo juego </a></li>
+</ul>
+
+<iframe name="juego" src="" style="width: 500px; height: 300px; border: none;" ></iframe>
+
+<canvas id="canva" width="600px" height="350px"></canvas>
+
+<button onclick="moverizquierda1();"> izquierdaj1 </button>
+<button onclick="moverderecha1();"> derechaj1 </button>
+<button onclick="moverarriba1();"> arribaj1 </button>
+<button onclick="moverabajo1();"> abajoj1 </button>
+
+<button onclick="moverizquierda2();"> izquierdaj2 </button>
+<button onclick="moverderecha2();"> derechaj2 </button>
+<button onclick="moverarriba2();"> arribaj2 </button>
+<button onclick="moverabajo2();"> abajoj2 </button>
+
+<script>
+    var canvas = document.getElementById("canva");
+    var lienzo = canvas.getContext("2d");
+    var ballRadius = 10;
+    var ballRadius1 = 12;
+    var ballRadius2 = 12;
+    var x = canvas.width/2;
+    var y = canvas.height-30;
+    var dx = 2;
+    var dy = -2;
+    var posxj1 = 150;
+    var posyj1 = 30;
+    var posxj2 = 470;
+    var posyj2 = 30;
+    var sonido = new Audio();
+
+function moverizquierda1(){
+if(posyj1 >= 40){
+posyj1 -=7;}
+}
+function moverderecha1(){
+if(posyj1 <= 320){
+posyj1 +=7;}
+}
+function moverarriba1(){
+if(posxj1 <= 220){
+posxj1 +=7;}
+}
+function moverabajo1(){
+    if(posxj1 >= 100){
+posxj1 -=7;}
+}
+
+
+function moverizquierda2(){
+if(posyj2 >= 40){
+posyj2 -=7;}
+}
+function moverderecha2(){
+if(posyj2 <= 320){
+posyj2 +=7;}
+}
+function moverarriba2(){
+if(posxj2 >= 420){
+posxj2 -=7;}
+}
+function moverabajo2(){
+    if(posxj2 <= 510){
+posxj2 +=7;}
+}
+
+
+function drawBall() {
+     
+    lienzo.beginPath();
+    lienzo.arc(x, y, ballRadius, 0, Math.PI*2);
+    lienzo.fillStyle = "#0095DD";
+    lienzo.fill();
+    lienzo.closePath();
+
+    lienzo.strokeStyle = 'rgb(0, 255, 0)';
+     //Dibuja un rectángulo
+     lienzo.strokeRect(10, 10, 580, 330);
+
+     lienzo.strokeStyle="rgb(0,200,200)";
+     lienzo.beginPath();
+     lienzo.arc(305,170,50,0,2*Math.PI,true);
+     lienzo.stroke();
+
+     lienzo.strokeStyle = 'rgb(0, 200, 200)';
+     lienzo.strokeRect(10, 95, 100, 160); 
+     lienzo.strokeStyle = 'rgb(0, 200, 200)';
+     lienzo.strokeRect(10, 119, 40, 110); 
+
+     lienzo.strokeStyle = 'rgb(0, 200, 200)';
+     lienzo.strokeRect(500, 95, 90, 160);
+     lienzo.strokeStyle = 'rgb(0, 200, 200)';
+     lienzo.strokeRect(550, 119, 40, 110);
+
+     lienzo.fillStyle="rgb(200,0,10)";
+     lienzo.beginPath();
+     lienzo.arc(posxj1,posyj1,ballRadius1,0,2*Math.PI,true);
+     lienzo.fill();     
+
+     lienzo.fillStyle="rgb(200,0,10)";
+     lienzo.beginPath();
+     lienzo.arc(posxj2,posyj2,ballRadius2,0,2*Math.PI,true);
+     lienzo.fill();  
+}
+
+function sonidogol(){
+
+if(x == 0 && 10 < canvas.height-ballRadius < 95){
+    sonido.src="gol-2-2.mp3";
+    sonido.play();
+}
+if(x == 600 && 10 < canvas.height-ballRadius < 95){
+    sonido.src="gol-2-2.mp3";
+    sonido.play();
+}
+
+}
+
+
+function draw() {
+    lienzo.clearRect(0, 0, canvas.width, canvas.height);
+    drawBall();
+    sonidogol();
+    
+    if(x + dx > canvas.width-ballRadius || x + dx < ballRadius) {
+        dx = -dx;
+    }
+    if(y + dy > canvas.height-ballRadius || y + dy < ballRadius) {
+        dy = -dy;
+    }
+    if(y == posyj1){
+      
+      dy = -dy;  
+    }
+
+   if(x == posxj1 || x == posxj2){
+      
+    dx = -dx;  
+   }
+
+    if(y == posyj1 || x == posyj2){
+      
+    dy = -dy;  
+    }
+
+
+    
+    x += dx;
+    y += dy;
+}
+
+setInterval(draw, 10);
+
+</script>
+
+</body>
+</html>

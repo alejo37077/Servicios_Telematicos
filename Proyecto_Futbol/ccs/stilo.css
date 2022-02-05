@@ -1,0 +1,18 @@
+#contenedor{
+    height: 700px;
+    width: 700px;
+    margin-left: 350px;
+    margin-right: 400px;
+}
+
+.btn{
+    width: 100px;
+    height: 30px;
+    outline: none;
+}
+
+.arriba1{
+    position: relative;
+    left: 200px;
+}
+
