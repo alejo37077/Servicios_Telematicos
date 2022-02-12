@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.0
+-- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
--- Servidor: 127.0.0.1
--- Tiempo de generación: 08-02-2022 a las 00:11:29
--- Versión del servidor: 10.4.19-MariaDB
--- Versión de PHP: 8.0.6
+-- Servidor: 127.0.0.1:3307
+-- Tiempo de generación: 12-02-2022 a las 05:17:32
+-- Versión del servidor: 10.4.22-MariaDB
+-- Versión de PHP: 8.1.2
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -38,7 +38,7 @@ CREATE TABLE `bandeja` (
 --
 
 INSERT INTO `bandeja` (`id`, `name`, `description`) VALUES
-(1, 'jh@jh.com', 'Hola');
+(5, '@nas.com', 'correo por nas');
 
 -- --------------------------------------------------------
 
@@ -69,6 +69,16 @@ INSERT INTO `login` (`usuario`, `pass`, `rol`) VALUES
 --
 ALTER TABLE `bandeja`
   ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT de las tablas volcadas
+--
+
+--
+-- AUTO_INCREMENT de la tabla `bandeja`
+--
+ALTER TABLE `bandeja`
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
