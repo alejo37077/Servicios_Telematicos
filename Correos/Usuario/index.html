@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+      <!-- Pagina del usuario  -->
+  <head>
+    <meta charset="UTF-8">
+    <title>Correo Electronico</title>
+    <!-- BOOTSTRAP  -->
+    <link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css">
+    <link rel="stylesheet" href="Style.css">	
+
+  </head>
+  <body>
+
+    <!-- Navegacion  -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Correo Electronico</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+
+    </nav>
+    <!-- Cuerpo de la web  -->
+    <div class="container">
+      <div class="row p-4">
+        <div class="col-md-5">
+          <div class="card">
+            <div class="card-body">
+              <!-- añadiendo correos -->
+              <form id="task-form">
+                <div class="form-group">
+                  <input type="text" id="name" placeholder="Ingrese correo" class="form-control">
+                </div>
+                <div class="form-group">
+                  <textarea id="description" cols="30" rows="10" class="form-control" placeholder="Ingrese el mensaje"></textarea>
+                </div>
+                <input type="hidden" id="taskId">
+                <button type="submit" class="btn btn-primary btn-block text-center">
+                  Enviar Correo
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tabla  -->
+        <div class="col-md-7">
+          <div class="card my-4" id="task-result">
+            <div class="card-body">
+              <!-- Busqueda -->
+              <ul id="container"></ul>
+            </div>
+          </div>
+
+          <table class="table table-bordered table-sm">
+            <thead>
+              <tr>
+                <td>ID</td>
+                <td>Correo</td>
+                <td>Mensaje</td>
+              </tr>
+            </thead>
+            <tbody id="tasks"></tbody>
+          </table>
+        </div>
+      </div>
+      <div>
+        <th><a href="../index.html">Regresar</a></th>
+      </div>
+    </div>
+
+
+    <!-- JQuery  -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+    <!-- Frontend Logic -->
+    <script src="appp.js"></script>
+  </body>
+
+</html>
